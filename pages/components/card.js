@@ -20,7 +20,7 @@ function Card(props) {
     }),
   }));
 
-  return (
+  return card ? (
     <div
       className="card-container"
       onClick={() =>
@@ -45,7 +45,7 @@ function Card(props) {
         {card.title}
       </div>
     </div>
-  );
+  ) : null;
 }
 
 export default Card;
